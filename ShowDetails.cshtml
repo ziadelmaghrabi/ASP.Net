@@ -1,0 +1,12 @@
+﻿@model UniversityMVC.Models.Student
+
+<h2>Student Details</h2>
+
+<div>
+    <h4>@Model.Name</h4>
+    <p><strong>Id:</strong> @Model.Id</p>
+    <p><strong>Age:</strong> @Model.Age</p>
+    <p><strong>Department:</strong> @(Model.Department != null ? Model.Department.Name : "No Department")</p>
+</div>
+
+<a asp-action="ShowAll">Back to List</a>
